@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "course_code": "CS214",
+    "course_title": "Data Structures and Algorithms",
+    "credit_units": 3.0,
+    "lecture_hours": 2,
+    "lab_hours": 3,
+    "prerequisites": "CC102 - Computer Programming 1",
+    "course_description": "A comprehensive study of fundamental data structures, abstract data types, algorithm analysis, sorting, searching, and advanced tree and graph algorithms designed for scalable software development.",
+    "semester": "1st Semester",
+    "academic_year": "2026-2027"
+  },
+  "course_outcomes": [
+    {
+      "clo_id": "CLO1",
+      "statement": "Analyze the asymptotic time and space complexity of fundamental algorithms and data structures.",
+      "bloom_domain": "Cognitive",
+      "bloom_level": "Analyzing",
+      "po_mapping": ["PO1", "PO2"]
+    },
+    {
+      "clo_id": "CLO2",
+      "statement": "Implement dynamic linear and non-linear data structures in high-level programming languages.",
+      "bloom_domain": "Psychomotor",
+      "bloom_level": "Applying",
+      "po_mapping": ["PO2", "PO3"]
+    },
+    {
+      "clo_id": "CLO3",
+      "statement": "Design robust and memory-efficient software components to resolve complex computational problems.",
+      "bloom_domain": "Cognitive",
+      "bloom_level": "Creating",
+      "po_mapping": ["PO2", "PO3"]
+    },
+    {
+      "clo_id": "CLO4",
+      "statement": "Demonstrate professional collaboration and adherence to coding ethical standards in team projects.",
+      "bloom_domain": "Affective",
+      "bloom_level": "Applying",
+      "po_mapping": ["PO8"]
+    }
+  ],
+  "weekly_schedules": [
+    {
+      "week_number": 1,
+      "topics": ["Institutional Orientation and Pointers/Memory Management Review"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO1.1", "statement": "Explain course outcomes, grading standards, and memory pointer semantics.", "domain_category": "K", "bloom_verb": "Explain"},
+        {"llo_id": "LLO1.2", "statement": "Configure the compiler toolchain and implement basic pointer manipulation programs.", "domain_category": "S", "bloom_verb": "Configure"},
+        {"llo_id": "LLO1.3", "statement": "Internalize safety protocols and collaborative etiquette in computer laboratories.", "domain_category": "A", "bloom_verb": "Internalize"}
+      ],
+      "teaching_learning_activities": ["Interactive Lecture", "IDE Setup Workshop"],
+      "assessment_tasks": ["Diagnostic Quiz", "Pointer Memory Exercise 1"],
+      "resources_references": ["Institutional Manual", "C++ / Python Official Docs"],
+      "mapped_clos": ["CLO1"]
+    },
+    {
+      "week_number": 2,
+      "topics": ["Algorithm Analysis and Asymptotic Notation (Big-O, Big-Omega, Big-Theta)"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO2.1", "statement": "Differentiate between worst, average, and best-case algorithmic efficiencies.", "domain_category": "K", "bloom_verb": "Differentiate"},
+        {"llo_id": "LLO2.2", "statement": "Calculate asymptotic complexity equations for iterative code fragments.", "domain_category": "S", "bloom_verb": "Calculate"},
+        {"llo_id": "LLO2.3", "statement": "Appraise the practical significance of algorithmic performance optimization.", "domain_category": "A", "bloom_verb": "Appraise"}
+      ],
+      "teaching_learning_activities": ["Theoretical Derivations", "Complexity Benchmarking Lab"],
+      "assessment_tasks": ["Problem Set 1", "Machine Problem 1"],
+      "resources_references": ["Introduction to Algorithms (Cormen et al.)"],
+      "mapped_clos": ["CLO1"]
+    },
+    {
+      "week_number": 3,
+      "topics": ["Linear Abstract Data Types: Dynamic Arrays and Vector Internals"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO3.1", "statement": "Describe dynamic array resizing and amortized cost mechanics.", "domain_category": "K", "bloom_verb": "Describe"},
+        {"llo_id": "LLO3.2", "statement": "Construct a custom generic dynamic array with dynamic memory management.", "domain_category": "S", "bloom_verb": "Construct"},
+        {"llo_id": "LLO3.3", "statement": "Demonstrate diligence in checking array bounds and preventing memory leaks.", "domain_category": "A", "bloom_verb": "Demonstrate"}
+      ],
+      "teaching_learning_activities": ["Code Walkthrough", "Pair Programming Lab"],
+      "assessment_tasks": ["Machine Problem 2: Dynamic Vector Implementation"],
+      "resources_references": ["Data Structures and Algorithm Analysis in C++ (Mark Weiss)"],
+      "mapped_clos": ["CLO2"]
+    },
+    {
+      "week_number": 4,
+      "topics": ["Linked Lists: Singly and Doubly Linked Architectures"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO4.1", "statement": "Compare linked list node allocation with contiguous array indexing.", "domain_category": "K", "bloom_verb": "Compare"},
+        {"llo_id": "LLO4.2", "statement": "Implement pointer linking, node insertion, and deletion algorithms.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO4.3", "statement": "Value disciplined code commenting when writing complex pointer references.", "domain_category": "A", "bloom_verb": "Value"}
+      ],
+      "teaching_learning_activities": ["Whiteboard Diagramming", "Hands-on Lab Exercise"],
+      "assessment_tasks": ["Machine Problem 3: Doubly Linked List ADT", "Quiz 2"],
+      "resources_references": ["Data Structures and Algorithms in Python (Goodrich et al.)"],
+      "mapped_clos": ["CLO2"]
+    },
+    {
+      "week_number": 5,
+      "topics": ["Circular Linked Lists and Skip List Fundamentals"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO5.1", "statement": "Explain the operational mechanics of circular lists in round-robin scheduling.", "domain_category": "K", "bloom_verb": "Explain"},
+        {"llo_id": "LLO5.2", "statement": "Execute circular traversal algorithms without triggering infinite loops.", "domain_category": "S", "bloom_verb": "Execute"},
+        {"llo_id": "LLO5.3", "statement": "Exhibit methodical debugging strategies when troubleshooting pointer cycles.", "domain_category": "A", "bloom_verb": "Exhibit"}
+      ],
+      "teaching_learning_activities": ["Visual Simulation", "Collaborative Debugging Session"],
+      "assessment_tasks": ["Lab Practical 1: Circular Queue Dispatcher"],
+      "resources_references": ["Operating System Concepts (Silberschatz)"],
+      "mapped_clos": ["CLO2"]
+    },
+    {
+      "week_number": 6,
+      "topics": ["Stack ADT: LIFO Principles and Expression Evaluation"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO6.1", "statement": "Identify stack mechanics in nested function calls and expression parsing.", "domain_category": "K", "bloom_verb": "Identify"},
+        {"llo_id": "LLO6.2", "statement": "Implement infix-to-postfix expression conversion and postfix evaluation.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO6.3", "statement": "Display attention to boundary condition checks such as stack overflow.", "domain_category": "A", "bloom_verb": "Display"}
+      ],
+      "teaching_learning_activities": ["Lecture & Demonstration", "Parser Programming Lab"],
+      "assessment_tasks": ["Machine Problem 4: Arithmetic Expression Evaluator"],
+      "resources_references": ["Algorithms 4th Edition (Sedgewick)"],
+      "mapped_clos": ["CLO2"]
+    },
+    {
+      "week_number": 7,
+      "topics": ["Queue ADT: FIFO, Circular Buffers, and Deques"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO7.1", "statement": "Explain the advantages of circular queue arrays over naive linear queues.", "domain_category": "K", "bloom_verb": "Explain"},
+        {"llo_id": "LLO7.2", "statement": "Develop thread-safe circular buffer primitives for producer-consumer pipelines.", "domain_category": "S", "bloom_verb": "Develop"},
+        {"llo_id": "LLO7.3", "statement": "Recognize the importance of buffer management in high-throughput services.", "domain_category": "A", "bloom_verb": "Recognize"}
+      ],
+      "teaching_learning_activities": ["Interactive Lecture", "Concurrency Simulation Lab"],
+      "assessment_tasks": ["Machine Problem 5: Print Spooler Queue Simulation", "Quiz 3"],
+      "resources_references": ["Modern Operating Systems (Tanenbaum)"],
+      "mapped_clos": ["CLO2"]
+    },
+    {
+      "week_number": 8,
+      "topics": ["Recursion Mechanics and Divide-and-Conquer Paradigm"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO8.1", "statement": "Formulate recurrence relations using the Master Theorem.", "domain_category": "K", "bloom_verb": "Formulate"},
+        {"llo_id": "LLO8.2", "statement": "Construct recursive and backtracking algorithms (e.g., N-Queens, Towers of Hanoi).", "domain_category": "S", "bloom_verb": "Construct"},
+        {"llo_id": "LLO8.3", "statement": "Demonstrate patience and methodical tracing of recursion call trees.", "domain_category": "A", "bloom_verb": "Demonstrate"}
+      ],
+      "teaching_learning_activities": ["Recursion Tracing Workshop", "Problem Solving Sessions"],
+      "assessment_tasks": ["Problem Set 2: Recurrence Solving", "Mock Midterm Assessment"],
+      "resources_references": ["Introduction to Algorithms (Cormen)"],
+      "mapped_clos": ["CLO1", "CLO3"]
+    },
+    {
+      "week_number": 9,
+      "topics": ["Midterm Assessment and Laboratory Practical Examination"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO9.1", "statement": "Integrate theoretical knowledge of linear data structures and asymptotic limits.", "domain_category": "K", "bloom_verb": "Integrate"},
+        {"llo_id": "LLO9.2", "statement": "Solve complex pointer-based data structure challenges within a timed environment.", "domain_category": "S", "bloom_verb": "Solve"},
+        {"llo_id": "LLO9.3", "statement": "Adhere strictly to academic honesty and institutional testing protocols.", "domain_category": "A", "bloom_verb": "Adhere"}
+      ],
+      "teaching_learning_activities": ["Institutional Written Exam", "Practical Hands-on Coding Assessment"],
+      "assessment_tasks": ["Midterm Departmental Examination", "Hands-on Practical Exam"],
+      "resources_references": ["Course Lecture Notes and Laboratory Exercises"],
+      "mapped_clos": ["CLO1", "CLO2"]
+    },
+    {
+      "week_number": 10,
+      "topics": ["Hierarchical Data Structures: General Trees and Binary Trees"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO10.1", "statement": "Categorize tree topologies, node degrees, heights, and levels.", "domain_category": "K", "bloom_verb": "Categorize"},
+        {"llo_id": "LLO10.2", "statement": "Implement recursive preorder, inorder, postorder, and level-order tree traversals.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO10.3", "statement": "Value recursive elegance in managing non-linear topologies.", "domain_category": "A", "bloom_verb": "Value"}
+      ],
+      "teaching_learning_activities": ["Tree Visualization Lectures", "Traversal Coding Lab"],
+      "assessment_tasks": ["Machine Problem 6: Binary Tree Traversals"],
+      "resources_references": ["Data Structures and Algorithm Analysis (Weiss)"],
+      "mapped_clos": ["CLO3"]
+    },
+    {
+      "week_number": 11,
+      "topics": ["Binary Search Trees (BST): Search, Insertion, and Deletion"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO11.1", "statement": "Explain the BST invariant and performance degradation under unbalanced inputs.", "domain_category": "K", "bloom_verb": "Explain"},
+        {"llo_id": "LLO11.2", "statement": "Execute node deletion algorithms handling leaf, single-child, and two-child cases.", "domain_category": "S", "bloom_verb": "Execute"},
+        {"llo_id": "LLO11.3", "statement": "Commit to rigorous edge-case testing during algorithm verification.", "domain_category": "A", "bloom_verb": "Commit"}
+      ],
+      "teaching_learning_activities": ["Interactive Lecture", "Live Coding Lab"],
+      "assessment_tasks": ["Machine Problem 7: Full BST Implementation", "Quiz 4"],
+      "resources_references": ["Algorithms 4th Edition (Sedgewick)"],
+      "mapped_clos": ["CLO3"]
+    },
+    {
+      "week_number": 12,
+      "topics": ["Self-Balancing Trees: AVL Trees and Tree Rotations"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO12.1", "statement": "Calculate balance factors and determine Single (LL, RR) and Double (LR, RL) rotations.", "domain_category": "K", "bloom_verb": "Calculate"},
+        {"llo_id": "LLO12.2", "statement": "Implement self-balancing insertion routines maintaining O(log n) guarantees.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO12.3", "statement": "Demonstrate perseverance when tackling intricate rotational pointer operations.", "domain_category": "A", "bloom_verb": "Demonstrate"}
+      ],
+      "teaching_learning_activities": ["Step-by-step Rotation Animations", "Lab Implementation"],
+      "assessment_tasks": ["Machine Problem 8: AVL Tree Self-Balancing Engine"],
+      "resources_references": ["Introduction to Algorithms (Cormen)"],
+      "mapped_clos": ["CLO3"]
+    },
+    {
+      "week_number": 13,
+      "topics": ["Priority Queues and Binary Heaps (Min-Heap / Max-Heap)"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO13.1", "statement": "Explain array-based binary heap indexing and heapify procedures.", "domain_category": "K", "bloom_verb": "Explain"},
+        {"llo_id": "LLO13.2", "statement": "Implement heap-extract-max and bubble-up operations for priority scheduling.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO13.3", "statement": "Prioritize cache-friendly array representation in systems engineering.", "domain_category": "A", "bloom_verb": "Prioritize"}
+      ],
+      "teaching_learning_activities": ["Lecture & Array Tracing", "Priority Queue Lab"],
+      "assessment_tasks": ["Machine Problem 9: Hospital Triage Priority System"],
+      "resources_references": ["Data Structures & Algorithms (Goodrich)"],
+      "mapped_clos": ["CLO2", "CLO3"]
+    },
+    {
+      "week_number": 14,
+      "topics": ["Graph Theory: Representations via Adjacency Matrix and Adjacency Lists"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO14.1", "statement": "Analyze time-space trade-offs between sparse and dense graph storage representations.", "domain_category": "K", "bloom_verb": "Analyze"},
+        {"llo_id": "LLO14.2", "statement": "Construct generic weighted directed and undirected graph classes.", "domain_category": "S", "bloom_verb": "Construct"},
+        {"llo_id": "LLO14.3", "statement": "Demonstrate collaboration in designing shared graph data structures.", "domain_category": "A", "bloom_verb": "Demonstrate"}
+      ],
+      "teaching_learning_activities": ["Network Topology Modeling", "Graph Class Coding Workshop"],
+      "assessment_tasks": ["Machine Problem 10: Graph Storage Engine", "Quiz 5"],
+      "resources_references": ["Introduction to Algorithms (Cormen)"],
+      "mapped_clos": ["CLO3"]
+    },
+    {
+      "week_number": 15,
+      "topics": ["Graph Traversal Algorithms: Breadth-First Search (BFS) and Depth-First Search (DFS)"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO15.1", "statement": "Differentiate shortest path BFS applications from backtracking DFS implementations.", "domain_category": "K", "bloom_verb": "Differentiate"},
+        {"llo_id": "LLO15.2", "statement": "Implement topological sorting and cycle detection algorithms on directed graphs.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO15.3", "statement": "Cultivate methodical analysis when evaluating interconnected real-world networks.", "domain_category": "A", "bloom_verb": "Cultivate"}
+      ],
+      "teaching_learning_activities": ["Graph Maze Solving Case Study", "Traversal Lab"],
+      "assessment_tasks": ["Machine Problem 11: Route Finding Engine"],
+      "resources_references": ["Algorithms 4th Edition (Sedgewick)"],
+      "mapped_clos": ["CLO3"]
+    },
+    {
+      "week_number": 16,
+      "topics": ["Hashing Techniques, Hash Functions, and Collision Resolution"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO16.1", "statement": "Evaluate collision mitigation strategies: Separate Chaining vs. Open Addressing.", "domain_category": "K", "bloom_verb": "Evaluate"},
+        {"llo_id": "LLO16.2", "statement": "Implement custom hash map tables with dynamic load factor rehashing.", "domain_category": "S", "bloom_verb": "Implement"},
+        {"llo_id": "LLO16.3", "statement": "Defend the critical role of secure hash distribution against algorithmic attacks.", "domain_category": "A", "bloom_verb": "Defend"}
+      ],
+      "teaching_learning_activities": ["Hash Distribution Benchmarking", "Hash Table Implementation Lab"],
+      "assessment_tasks": ["Machine Problem 12: High-Performance Key-Value Store"],
+      "resources_references": ["Data Structures and Algorithm Analysis (Weiss)"],
+      "mapped_clos": ["CLO2", "CLO3"]
+    },
+    {
+      "week_number": 17,
+      "topics": ["Advanced Sorting (Quicksort, Mergesort) and System Integration"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO17.1", "statement": "Contrast comparison-based lower bounds O(n log n) with linear non-comparison sorts.", "domain_category": "K", "bloom_verb": "Contrast"},
+        {"llo_id": "LLO17.2", "statement": "Optimize 3-way partitioning Quicksort and combine multi-threaded sorting routines.", "domain_category": "S", "bloom_verb": "Optimize"},
+        {"llo_id": "LLO17.3", "statement": "Demonstrate professional accountability and teamwork in project integration.", "domain_category": "A", "bloom_verb": "Demonstrate"}
+      ],
+      "teaching_learning_activities": ["Sorting Benchmark Challenge", "Team Project Final Integration"],
+      "assessment_tasks": ["Term Project Code Submission", "Peer Evaluation Form"],
+      "resources_references": ["Introduction to Algorithms (Cormen)"],
+      "mapped_clos": ["CLO1", "CLO3", "CLO4"]
+    },
+    {
+      "week_number": 18,
+      "topics": ["Final Institutional Examination and Capstone Project Defense"],
+      "intended_learning_outcomes": [
+        {"llo_id": "LLO18.1", "statement": "Synthesize data structure tradeoffs across large-scale software architectures.", "domain_category": "K", "bloom_verb": "Synthesize"},
+        {"llo_id": "LLO18.2", "statement": "Defend architectural decisions, algorithmic complexity, and test results live.", "domain_category": "S", "bloom_verb": "Defend"},
+        {"llo_id": "LLO18.3", "statement": "Display ethical composure and professional communication during oral examination.", "domain_category": "A", "bloom_verb": "Display"}
+      ],
+      "teaching_learning_activities": ["Oral Defense Presentation", "Live Code Execution Assessment"],
+      "assessment_tasks": ["Departmental Final Examination", "Project Defense Rubric"],
+      "resources_references": ["Course Project Guidelines and Repository Archive"],
+      "mapped_clos": ["CLO1", "CLO2", "CLO3", "CLO4"]
+    }
+  ]
+}

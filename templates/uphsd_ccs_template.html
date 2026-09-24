@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ metadata.course_code }} - OBE Course Syllabus | UPHSD CCS</title>
+    <style>
+        :root {
+            --uphsd-maroon: #7A0019;
+            --uphsd-gold: #FFB81C;
+            --uphsd-dark: #222222;
+            --uphsd-light-bg: #FDFDFD;
+            --border-color: #333333;
+        }
+
+        body {
+            font-family: "Calibri", "Arial", sans-serif;
+            color: var(--uphsd-dark);
+            background-color: #EFEFEF;
+            margin: 0;
+            padding: 20px;
+            font-size: 11pt;
+            line-height: 1.35;
+        }
+
+        .syllabus-container {
+            max-width: 1050px;
+            margin: auto;
+            background: #FFFFFF;
+            padding: 40px 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-top: 8px solid var(--uphsd-maroon);
+        }
+
+        /* Institutional Header */
+        .inst-header {
+            text-align: center;
+            border-bottom: 2px solid var(--uphsd-maroon);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .inst-header h1 {
+            font-size: 15pt;
+            color: var(--uphsd-maroon);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .inst-header h2 {
+            font-size: 12pt;
+            margin: 3px 0;
+            font-weight: 600;
+        }
+
+        .inst-header h3 {
+            font-size: 11pt;
+            color: #555555;
+            margin: 2px 0 6px 0;
+            font-weight: normal;
+        }
+
+        .inst-header .doc-title {
+            font-size: 13pt;
+            font-weight: bold;
+            background-color: var(--uphsd-maroon);
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 4px 20px;
+            border-radius: 3px;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* Section Formatting */
+        .section-title {
+            background-color: var(--uphsd-maroon);
+            color: #FFFFFF;
+            font-size: 11pt;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-left: 5px solid var(--uphsd-gold);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 10pt;
+        }
+
+        table, th, td {
+            border: 1px solid #777777;
+        }
+
+        th {
+            background-color: #F0F0F0;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            padding: 6px 8px;
+        }
+
+        td {
+            padding: 6px 8px;
+            vertical-align: top;
+        }
+
+        /* Specific Table Column Styling */
+        .matrix-table th {
+            background-color: #E8E8E8;
+            font-size: 9.5pt;
+        }
+
+        .text-center { text-align: center; }
+        .font-bold { font-weight: bold; }
+
+        .tag-k { color: #004085; font-weight: bold; }
+        .tag-s { color: #155724; font-weight: bold; }
+        .tag-a { color: #856404; font-weight: bold; }
+
+        .pvm-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pvm-card {
+            border: 1px solid #CCCCCC;
+            padding: 10px 14px;
+            background-color: #FAFAFA;
+            font-size: 9.5pt;
+        }
+
+        .pvm-card h4 {
+            margin: 0 0 6px 0;
+            color: var(--uphsd-maroon);
+            font-size: 10pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #DDDDDD;
+            padding-bottom: 3px;
+        }
+
+        /* Sign-off signatures */
+        .signature-table td {
+            height: 55px;
+            vertical-align: bottom;
+            text-align: center;
+            font-size: 9.5pt;
+        }
+
+        /* Print media query for seamless browser-to-PDF export */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .syllabus-container {
+                box-shadow: none;
+                padding: 10mm 15mm;
+                max-width: 100%;
+                border-top: none;
+            }
+            .section-title {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            th {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            tr {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="syllabus-container">
+
+    <!-- INSTITUTIONAL HEADER -->
+    <div class="inst-header">
+        <h1>University of Perpetual Help System DALTA</h1>
+        <h2>COLLEGE OF COMPUTER STUDIES</h2>
+        <h3>Alabang-Zapote Road, Pamplona Tres, Las Piñas City, Metro Manila, Philippines</h3>
+        <h3>Bachelor of Science in Computer Science / Information Technology</h3>
+        <div class="doc-title">OUTCOME-BASED EDUCATION (OBE) COURSE SYLLABUS</div>
+    </div>
+
+    <!-- PVM & INSTITUTIONAL STATEMENTS -->
+    <div class="pvm-box">
+        <div class="pvm-card">
+            <h4>University Philosophy</h4>
+            <p>The University of Perpetual Help System DALTA believes and adheres to the cardinal virtue <em>"Character Building is Nation Building"</em>, striving to develop Filipino leaders dedicated to the loving service of God and society.</p>
+        </div>
+        <div class="pvm-card">
+            <h4>College Vision & Mission</h4>
+            <p><strong>Vision:</strong> The College of Computer Studies envisions producing globally competent IT leaders and ethical innovators.<br>
+            <strong>Mission:</strong> To provide industry-aligned curricula, research-oriented faculty, and modern computer laboratory facilities.</p>
+        </div>
+    </div>
+
+    <!-- I. COURSE SPECIFICATION & METADATA -->
+    <div class="section-title">I. Course Specification & Details</div>
+    <table>
+        <tr>
+            <th width="20%">Course Code</th>
+            <td width="30%" class="font-bold">{{ metadata.course_code }}</td>
+            <th width="20%">Academic Year & Term</th>
+            <td width="30%">{{ metadata.academic_year }} | {{ metadata.semester }}</td>
+        </tr>
+        <tr>
+            <th>Course Title</th>
+            <td class="font-bold">{{ metadata.course_title }}</td>
+            <th>Credit Units</th>
+            <td>{{ metadata.credit_units }} Units (Lecture: {{ metadata.lecture_hours }} hrs | Lab: {{ metadata.lab_hours }} hrs)</td>
+        </tr>
+        <tr>
+            <th>Prerequisite(s)</th>
+            <td>{{ metadata.prerequisites }}</td>
+            <th>Contact Hours / Week</th>
+            <td>{{ metadata.lecture_hours + metadata.lab_hours }} Hours</td>
+        </tr>
+        <tr>
+            <th>Course Description</th>
+            <td colspan="3" style="text-align: justify;">{{ metadata.course_description }}</td>
+        </tr>
+    </table>
+
+    <!-- II. COURSE LEARNING OUTCOMES & PO MAPPING -->
+    <div class="section-title">II. Course Learning Outcomes (CLOs) & Program Alignment</div>
+    <table class="matrix-table">
+        <thead>
+            <tr>
+                <th width="10%">Outcome ID</th>
+                <th width="50%">Course Learning Outcome Statement</th>
+                <th width="15%">Bloom Domain</th>
+                <th width="15%">Taxonomy Level</th>
+                <th width="10%">Mapped POs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for clo in course_outcomes %}
+            <tr>
+                <td class="text-center font-bold">{{ clo.clo_id }}</td>
+                <td>{{ clo.statement }}</td>
+                <td class="text-center">{{ clo.bloom_domain }}</td>
+                <td class="text-center">{{ clo.bloom_level }}</td>
+                <td class="text-center font-bold">{{ clo.po_mapping | join(', ') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- III. 18-WEEK COURSE DESIGN MATRIX -->
+    <div class="section-title">III. 18-Week Course Design Matrix</div>
+    <table class="matrix-table">
+        <thead>
+            <tr>
+                <th width="6%">Wk</th>
+                <th width="26%">Lesson Learning Outcomes (LLOs)<br><small class="tag-k">[K]</small> <small class="tag-s">[S]</small> <small class="tag-a">[A]</small></th>
+                <th width="24%">Course Topics / Modules</th>
+                <th width="16%">Teaching & Learning Activities (TLAs)</th>
+                <th width="16%">Assessment Tasks (ATs)</th>
+                <th width="12%">Mapped CLOs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for week in weekly_schedules %}
+            <tr {% if week.week_number in [9, 18] %}style="background-color: #FFF9E6; font-weight: 500;"{% endif %}>
+                <td class="text-center font-bold">W{{ week.week_number }}</td>
+                <td>
+                    <ul style="margin: 0; padding-left: 15px;">
+                        {% for llo in week.intended_learning_outcomes %}
+                        <li>
+                            {% if llo.domain_category == 'K' %}
+                                <span class="tag-k">[K]</span>
+                            {% elif llo.domain_category == 'S' %}
+                                <span class="tag-s">[S]</span>
+                            {% else %}
+                                <span class="tag-a">[A]</span>
+                            {% endif %}
+                            {{ llo.statement }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul style="margin: 0; padding-left: 15px;">
+                        {% for topic in week.topics %}
+                        <li><strong>{{ topic }}</strong></li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul style="margin: 0; padding-left: 15px;">
+                        {% for tla in week.tlas %}
+                        <li>{{ tla }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul style="margin: 0; padding-left: 15px;">
+                        {% for at in week.ats %}
+                        <li>{{ at }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td class="text-center font-bold">{{ week.mapped_clos | join(', ') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- IV. GRADING SYSTEM -->
+    <div class="section-title">IV. Institutional Grading Criteria</div>
+    <table>
+        <tr>
+            <th width="50%">Lecture Component (50%)</th>
+            <th width="50%">Laboratory Component (50%)</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Quizzes / Formative Assessments: <strong>25%</strong></li>
+                    <li>Problem Sets & Case Studies: <strong>25%</strong></li>
+                    <li>Major Examination (Midterm / Final): <strong>50%</strong></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Laboratory Exercises / Machine Problems: <strong>50%</strong></li>
+                    <li>Practical Examination: <strong>30%</strong></li>
+                    <li>Laboratory Behavior & Ethics: <strong>20%</strong></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center font-bold">
+                Final Grade = (Lecture Component × 0.50) + (Laboratory Component × 0.50) | Passing Grade: 75.0% (3.00)
+            </td>
+        </tr>
+    </table>
+
+    <!-- V. COURSE POLICIES & REFERENCES -->
+    <div class="section-title">V. Course Policies & Academic Guidelines</div>
+    <div style="font-size: 9.5pt; text-align: justify; margin-bottom: 20px;">
+        <p><strong>1. Academic Integrity & Ethics:</strong> Students are strictly expected to submit their own original code and solutions. Plagiarism, uncredited reproduction of AI-generated artifacts, and unauthorized code sharing constitute major academic offenses under the Institutional Student Handbook.</p>
+        <p><strong>2. Laboratory Etiquette:</strong> Food and drinks are strictly forbidden inside the CCS laboratories. Computers must be properly shut down and workstations cleaned after every laboratory session.</p>
+        <p><strong>3. Late Submissions:</strong> Machine problems submitted beyond the scheduled deadline are subject to a 10% daily grade deduction unless accompanied by a verified medical certificate.</p>
+    </div>
+
+    <!-- VI. SIGN-OFF MATRIX -->
+    <div class="section-title">VI. Institutional Approvals & Review Matrix</div>
+    <table class="signature-table">
+        <tr>
+            <th width="33%">Prepared By (Faculty Member)</th>
+            <th width="33%">Reviewed By (Program Chair)</th>
+            <th width="34%">Approved By (Dean, CCS)</th>
+        </tr>
+        <tr>
+            <td>
+                <strong>Engr. / Prof. Rob Malitao</strong><br>
+                Course Instructor, CCS
+            </td>
+            <td>
+                <strong>Department Chairperson</strong><br>
+                Computer Science & IT Programs
+            </td>
+            <td>
+                <strong>Dean, College of Computer Studies</strong><br>
+                College Quality Assurance Board
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

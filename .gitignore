@@ -1,0 +1,15 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment folders
+.venv/
+env/
+venv/
+
+# VS Code local workspace settings
+.vscode/
+
+# Streamlit local cache
+.streamlit/
